@@ -1,0 +1,50 @@
+React Native 和其他的方案区别很大, 由于:
+
+我们并不是希望给你一个神奇的戏法能让在你不改变任何的开发哲学/习惯的情况下就能自动生成出很棒的移动应用体验.
+如果你在做移动开发, 你想要很棒的用户体验. 你必需是要关心性能, 必须关心怎么编写精细的交互.
+任何优秀的移动端体验后面, 都需要很专心的人. 不要相信别的说法.
+不过, 我感到相比而言要达到那样有些的效果, React Native 要求开发开发者做的工作, 比其他我见过的备选方案要做的工作要少得多.
+
+React Native 完全不用 DOM. React 原本用来解决浏览器开发中出现的, 不可预测的编程实践当中常见的性能问题,
+但是也仅仅能帮你做那么多而已.
+React Native 提升了一个层次, 不止于浏览器所能做的.
+React Native 展示的 ReactJS 总是更多地偏向于 "zero DOM" 而不是 "virtual DOM"(跟大家以为的相反).
+
+React Native 也很特别, 因为我们想要继承一些 Web 开发当中好的地方.
+这是因为我们只是想要性能, 想要 Native View 的资源的控制能力, 而不是要抛弃 Web 开发优秀的内容.
+在 React Native 当中, 你可是使用 CSS Flexbox 对 Native View 进行布局,
+同时有很多很熟悉的样式属性, 但是不会有泛滥的 CSS style reflow.
+事件系统也跟现在 React 应用当中的一致, 因为类库的代码是一样的.
+按照 Web 开发中让我们高效开发的样式/布局的子集来构建应用,
+那样开发者就能在当下就构建优秀的 Web 应用, 而不是把时间排到未来.
+我认为真的, 相比鼓励开发者抛弃任何哪怕有点像 Web 技术的东西然后学一门完全不同的工具链(甚至两门三门), 这样要好得多.
+
+React Native 特殊的地方还在于它可以用 JavaScript 来写高质量的应用.
+在浏览器当中, 你很可能要对付一些低层级的限制, 然后你没有办法.
+或者是不能访问平台上的控件(在 scroll view 当中包含 physics/Maps),
+或者是你在实现当中总是被图片解码干扰, 没什么办法.
+
+用 React Native 的话, 你可以有一些办法了.
+你可以在 ReactJS 应用当中使用那些永远不会用 JS 来实现的 view(比如地图),
+而且你的构建当中可以用一些更高的执行粒度的 block,
+(多线程解码的 <Image />)(不使用 DOM 的 <View > block)
+结果是这带来了质量方面到了空前的层次的感觉, 而且对应平台的特征.
+
+
+移动应用跨平台框架江湖将现终结者？速来参拜来自Facebook的React Native
+http://blog.csdn.net/zhubaitian/article/details/43636647
+
+
+ReactJS 快速入门
+http://segmentfault.com/a/1190000002559219
+
+React.js Conf 2015 Keynote - Introducing React Native
+http://www.tudou.com/programs/view/A-1wE18UWeA/
+
+
+
+适用于WEB开发者的Atom编辑器Package
+http://segmentfault.com/a/1190000002558855
+
+
+http://www.js-css.cn/

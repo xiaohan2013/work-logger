@@ -1,0 +1,5 @@
+若是USB连接模式，则在地址栏输入：http://localhost:9998
+adb forward tcp:9998 tcp:9998
+
+
+若是Wi-Fi连接模式，则在地址栏输入：手机IP+:9998
